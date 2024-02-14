@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+	--primary: #029ae0;
+	--primary-100: #073044;
+	--primary-200: #415a66;
+	--primary-300: #017cb3;
+	--primary-400: #50b6e6;
+	--background: #202124;
+	--background-100: #26282b;
+	--background-200: #3b3c3f;
+	--font-xs: 10px;
+	--font-sm:12px;
+	--font-base: 14px;
+	--font-lg: 16px;
+	--font-xl: 18px;
+	--font-2xl: 20px;
+	--font-3xl: 22px;
+}
+
+* {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*	generic styles */
+h2 {
+	font-size: var(--font-3xl);
+}
+
+h3 {
+	font-size: var(--font-2xl);
+}
+
+h4 {
+	font-size: var(--font-3xl);
+}
+
+h5 {
+	font-size: var(--font-lg)
+}
+
+body{
+	background-color: var(--background);
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-areas: 'sidebar content';
+	height: 100vh;
+	color: #fff;
+	margin: 0;
+}
+
+button {
+	padding: 8px 15px;
+	cursor: pointer;
+	height: 40px;
+	font-size: 14px;
+	background-color: var(--primary);
+	color: white;
+	border-radius: 100px;
+	border: none;
+}
+
+/*	sidebar	*/
+
+#sidebar {
+	background-color: var(--background-100);
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}
+
+#company-logo {
+	height: 65px;
+}
+
+#nav-buttons {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+#nav-buttons li{
+	list-style-type: none;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 14px;
+	cursor: pointer
+}
+
+#nav-buttons li:hover{
+	background-color: var(--primary);
+}
+
+/*	content	*/
+
+header {
+	padding: 30px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*	cards */
+.project-card {
+	background-color: var(--background-100);
+	border-radius: 8px;
+	cursor: pointer;
+}
+.project-card:hover {
+	outline: 2px solid var(--primary);
+}
+
+.card-header {
+	display: flex;
+	column-gap: 20px;
+	padding: 15px 20px;
+	align-items: center;
+	justify-content: start;
+	border-bottom: 2px solid var(--background-200);
+	height: 60px;
+}
+.card-content {
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	align-items: start;
+}
+.card-property {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#projects-list {
+	display: grid;
+	padding: 20px 40px;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
