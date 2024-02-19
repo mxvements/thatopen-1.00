@@ -61,6 +61,9 @@ button {
 	color: white;
 	border-radius: 100px;
 	border: none;
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
 }
 
 button:hover {
@@ -229,4 +232,8 @@ form button {
 	gap: 30px;
 	grid-template-columns: 475px 1fr;
 	height: 100%;
+  }
+
+  #to-do-list {
+	flex-grow: 1;
   }
