@@ -63,6 +63,16 @@ button {
 	border: none;
 }
 
+button:hover {
+	background-color: var(--primary-400);
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
 /*	sidebar	*/
 
 #sidebar {
@@ -94,7 +104,7 @@ button {
 	background-color: var(--primary);
 }
 
-/*	content	*/
+/*	Projects page: content	*/
 
 header {
 	padding: 30px 40px;
@@ -204,3 +214,19 @@ form button {
 	margin: 5px;
 }
 
+/*	Projects datail page: content */
+
+.dashboard-card {
+	background-color: var(--background-100);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  #project-details > .main-page-content {
+	display: grid;
+	padding: 20px 40px;
+	gap: 30px;
+	grid-template-columns: 475px 1fr;
+	height: 100%;
+  }

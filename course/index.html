@@ -17,171 +17,199 @@
 		</ul>
 	</div>
 	<main id="content">
-		<dialog id="new-project-modal">
-			<form>
-				<h2>New Project</h2>
-				<div class="input-list">
-					<div class="form-field-container">
-						<label class="form-label">Name</label>
-						<input class="form-input" type="text">
-					</div>
-					<div class="form-field-container">
-						<label class="form-label">Description</label>
-						<textarea class="form-input"  cols="30" rows="5" placeholder="Give your description"></textarea>
-					</div>
-					<div class="form-field-container">
-						<label class="form-label">Role</label>
-						<select class="form-input">
-							<option>Architect</option>
-							<option>Engineer</option>
-							<option>Developer</option>
-						</select>
-					</div>
-					<div class="form-field-container">
-						<label class="form-label">Status</label>
-						<select class="form-input">
-							<option>Pending</option>
-							<option>Active</option>
-							<option>Fnished</option>
-						</select>
-					</div>
-					<div class="form-field-container">
-						<label class="form-label">Finish date</label>
-						<input class="form-input" type="date">
-					</div>
-				</div>
-				<div id="action-buttons">
-					<button>Cancel</button>
-					<button>Accept</button>
-				</div>
-			</form>
-		</dialog>
-		<header>
-			<h2>Project</h2>
-			<div>
-				<button>New project</button>
-			</div>
-		</header>
-		<div id="projects-list">
 
-			<div class="project-card">
-				<div class="card-header">
-					<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
-					<div>
-						<h5>Project Name</h5>
-						<p>Project Descrition</p>
+		<div class="page" id="project-page" style="display: none;">
+			<dialog id="new-project-modal">
+				<form>
+					<h2>New Project</h2>
+					<div class="input-list">
+						<div class="form-field-container">
+							<label class="form-label">Name</label>
+							<input class="form-input" type="text">
+						</div>
+						<div class="form-field-container">
+							<label class="form-label">Description</label>
+							<textarea class="form-input"  cols="30" rows="5" placeholder="Give your description"></textarea>
+						</div>
+						<div class="form-field-container">
+							<label class="form-label">Role</label>
+							<select class="form-input">
+								<option>Architect</option>
+								<option>Engineer</option>
+								<option>Developer</option>
+							</select>
+						</div>
+						<div class="form-field-container">
+							<label class="form-label">Status</label>
+							<select class="form-input">
+								<option>Pending</option>
+								<option>Active</option>
+								<option>Fnished</option>
+							</select>
+						</div>
+						<div class="form-field-container">
+							<label class="form-label">Finish date</label>
+							<input class="form-input" type="date">
+						</div>
+					</div>
+					<div id="action-buttons">
+						<button>Cancel</button>
+						<button>Accept</button>
+					</div>
+				</form>
+			</dialog>
+			<header>
+				<h2>Project</h2>
+				<div>
+					<button>New project</button>
+				</div>
+			</header>
+			<div id="projects-list">
+	
+				<div class="project-card">
+					<div class="card-header">
+						<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
+						<div>
+							<h5>Project Name</h5>
+							<p>Project Descrition</p>
+						</div>
+					</div>
+					<div class="card-content">
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
 					</div>
 				</div>
-				<div class="card-content">
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
+	
+				<div class="project-card">
+					<div class="card-header">
+						<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
+						<div>
+							<h5>Project Name</h5>
+							<p>Project Descrition</p>
+						</div>
 					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
+					<div class="card-content">
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
 					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
+				</div>
+	
+				<div class="project-card">
+					<div class="card-header">
+						<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
+						<div>
+							<h5>Project Name</h5>
+							<p>Project Descrition</p>
+						</div>
+					</div>
+					<div class="card-content">
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="project-card">
+					<div class="card-header">
+						<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
+						<div>
+							<h5>Project Name</h5>
+							<p>Project Descrition</p>
+						</div>
+					</div>
+					<div class="card-content">
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="project-card">
+					<div class="card-header">
+						<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
+						<div>
+							<h5>Project Name</h5>
+							<p>Project Descrition</p>
+						</div>
+					</div>
+					<div class="card-content">
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
+						<div class="card-property">
+							<p style="color: #969696;">Attribute</p>
+							<p>Attribute data</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="project-card">
-				<div class="card-header">
-					<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
-					<div>
-						<h5>Project Name</h5>
-						<p>Project Descrition</p>
-					</div>
-				</div>
-				<div class="card-content">
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-				</div>
-			</div>
+		</div>
 
-			<div class="project-card">
-				<div class="card-header">
-					<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
-					<div>
-						<h5>Project Name</h5>
-						<p>Project Descrition</p>
-					</div>
+		<div class="page" id="project-details">
+			<!--
+				container as a grid
+				with a container with a div with a fixed size
+					left-hand columnd has two divs
+						one with the project info
+						another one with the project's to-do list
+				and another with the remaining space
+			-->
+			<header>
+				<div>
+					<h2>Hospital Center</h2>
+					<p style="color: #969696">Community hospital</p>
 				</div>
-				<div class="card-content">
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
+			</header>
+			<div class="main-page-content">
+				<div style="display: flex; flex-direction: column; row-gap: 30px;">
+					<div class="dashboard-card">Project information</div>
+					<div class="dashboard-card">To-do list</div>
 				</div>
-			</div>
-
-			<div class="project-card">
-				<div class="card-header">
-					<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
-					<div>
-						<h5>Project Name</h5>
-						<p>Project Descrition</p>
-					</div>
-				</div>
-				<div class="card-content">
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="project-card">
-				<div class="card-header">
-					<p style="background-color: #ca8134; padding: 10px; border-radius: 8px; aspect-ratio: 1;">HC</p>
-					<div>
-						<h5>Project Name</h5>
-						<p>Project Descrition</p>
-					</div>
-				</div>
-				<div class="card-content">
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-					<div class="card-property">
-						<p style="color: #969696;">Attribute</p>
-						<p>Attribute data</p>
-					</div>
-				</div>
+				<div id="viewer-container" class="dashboard-card"></div>
 			</div>
 		</div>
 	</main>
