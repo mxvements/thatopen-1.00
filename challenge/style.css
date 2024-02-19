@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+	--primary: #029ae0;
+	--primary-transparent-02: rgba(2, 154, 224, 0.2);
+	--primary-transparent-05: rgba(2, 154, 224, 0.5);
+	--primary-100: #073044;
+	--primary-200: #415a66;
+	--primary-300: #017cb3;
+	--primary-400: #50b6e6;
+	--primary-400: #969696;
+	--background: #202124;
+	--background-100: #26282b;
+	--background-200: #3b3c3f;
+	--background-300: #747578;
+	--font-xs: 10px;
+	--font-sm:12px;
+	--font-base: 14px;
+	--font-lg: 16px;
+	--font-xl: 18px;
+	--font-2xl: 20px;
+	--font-3xl: 22px;
+}
+
+* {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*	generic styles */
+h2 {
+	font-size: var(--font-3xl);
+}
+
+h3 {
+	font-size: var(--font-2xl);
+}
+
+h4 {
+	font-size: var(--font-3xl);
+}
+
+h5 {
+	font-size: var(--font-lg)
+}
+
+body {
+	background-color: var(--background);	
+	margin: 0;
+}
+
+button {
+	padding: 10px;
+	background-color: var(--primary);
+	border-radius: 100px;
+	border: 0;
+	cursor: pointer;
+}
+
+.btn-secondary {
+	background-color: var(--background-200);
+}
+
+/* user page: content */
+#user-page {
+	display: flex;
+	flex-direction: column;
+	margin: 40px;
+}
+
+/* header */
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--primary-400);
+}
+
+#header-shortcuts {
+	justify-content: right;
+}
+
+/* main general styles*/
+main {
+	margin-top: 60px;
+	background-color: var(--background-100);
+	height: 100vh;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+main > #user-list-header {
+	color: var(--background-300);
+	font-size: var(--font-sm);
+	padding: 20px 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+main > #user-list {
+	display: flex;
+	flex-direction: column;
+}
+
+/* user-list */
+.user {
+	background-color: var(--background-200);
+	margin-bottom: 10px;
+	border-radius: 10px;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: white;
+	font-size: var(--font-sm);
+	border: 1px solid var(--background-200);
+}
+
+.user:hover {
+	border: 1px solid var(--primary);
+}
+
+.teams {
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}
+.teams > p {
+	padding: 5px;
+}
+.team-item {
+	background-color: var(--primary-transparent-02);
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px dotted var(--primary-transparent-05);
+	padding: 5px;
+}
+
+
+.name {
+	flex: 1;
+}
+.name > p {
+	padding-top: 5px;
+}
+
+.email {
+	flex: 1;
+}
+.email > a {
+	color: white;
+	text-decoration: none;
+}
+.email > a:hover {
+	color: var(--primary);
+	cursor: pointer;
+}
