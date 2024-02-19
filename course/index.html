@@ -17,6 +17,45 @@
 		</ul>
 	</div>
 	<main id="content">
+		<dialog id="new-project-modal">
+			<form>
+				<h2>New Project</h2>
+				<div class="input-list">
+					<div class="form-field-container">
+						<label class="form-label">Name</label>
+						<input class="form-input" type="text">
+					</div>
+					<div class="form-field-container">
+						<label class="form-label">Description</label>
+						<textarea class="form-input"  cols="30" rows="5" placeholder="Give your description"></textarea>
+					</div>
+					<div class="form-field-container">
+						<label class="form-label">Role</label>
+						<select class="form-input">
+							<option>Architect</option>
+							<option>Engineer</option>
+							<option>Developer</option>
+						</select>
+					</div>
+					<div class="form-field-container">
+						<label class="form-label">Status</label>
+						<select class="form-input">
+							<option>Pending</option>
+							<option>Active</option>
+							<option>Fnished</option>
+						</select>
+					</div>
+					<div class="form-field-container">
+						<label class="form-label">Finish date</label>
+						<input class="form-input" type="date">
+					</div>
+				</div>
+				<div id="action-buttons">
+					<button>Cancel</button>
+					<button>Accept</button>
+				</div>
+			</form>
+		</dialog>
 		<header>
 			<h2>Project</h2>
 			<div>
@@ -146,5 +185,6 @@
 			</div>
 		</div>
 	</main>
+
 </body>
 </html>

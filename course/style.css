@@ -9,6 +9,7 @@
 	--background: #202124;
 	--background-100: #26282b;
 	--background-200: #3b3c3f;
+	--background-300: #747578;
 	--font-xs: 10px;
 	--font-sm:12px;
 	--font-base: 14px;
@@ -141,3 +142,65 @@ header {
 	gap: 30px;
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
+
+/*	Modal form styles */
+
+dialog {
+	background-color: transparent;
+	border: none;
+	margin: auto;
+}
+
+dialog::backdrop {
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur (3px);
+}
+
+form {
+	width: 450px;
+	border-radius: 10px;
+	background-color: var(--background-100);
+	color: white;
+}
+
+form h2 {
+	padding: 20px;
+	border-bottom: 2px solid var(--background-200);
+}
+
+form .input-list {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	row-gap: 25px;
+}
+
+form .form-field-container {
+	display: flex;
+	flex-direction: column;
+}
+
+form .form-input {
+	background-color: var(--background-200);;
+	color: white;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+form .form-label {
+	padding: 5px;
+	color: var(--background-300);
+
+	font-size: var(--font-sm);
+}
+
+form #action-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+}
+form button {
+	margin: 5px;
+}
+
